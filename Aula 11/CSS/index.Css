@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    
+        background-color: crimson;
+        font-size: xx-small;
+        font-family: Verdana,Tahoma, sans-serif;
+        color: bisque;
+    
+}
+h1 {
+    font-style: oblique;
+    background-color: brown;
+}
+p {
+    font-weight: 200;
+}
