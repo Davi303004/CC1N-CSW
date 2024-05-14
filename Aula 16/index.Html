@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            color: #fff;
+            background-color: #113102;
+        }
+        .Container{
+            background-color: gray;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            align-items: baseline;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .item{
+            background-color: darkgreen;
+            color: #fff;
+            padding: 20px;
+            margin: 5px;
+        }
+        .Artigo-01{
+            background-color: #02251D;
+            flex-grow:7;
+        }
+        .Artigo-02{
+            background-color: #485946;
+            font-size: x-large;
+        }
+        .Artigo-03{
+            background-color: #20735B;
+            flex-shrink: 2;
+        }
+        .Artigo-04{
+           background-color: #485946;
+        }
+        .Artigo-05{
+            background-color: #83A672;
+        }
+        .Container-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin:10px;
+            background-color: gray;
+            height: 250px;
+        }
+        .div-01{
+            text-align: center;
+            background-color: #038C33;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Flexbox</h1>
+    <section class="Container">
+        <article class="item Artigo-01">RAPAAAIZ</article>
+        <article class="item Artigo-02">UUUUI</article>
+        <article class="item Artigo-03">RATINHO NHO NHO</article>
+        <article class="item Artigo-04">UEEEEEEPA</article>
+        <article class="item Artigo-05">IIIIIIIIHA</article>
+    </section>
+
+    <section class="Container-div">
+        <div class=" item div-01">01</div>
+    </section>
+</body>
+</html>
