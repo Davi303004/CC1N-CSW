@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 240px;
+        }
+        .formulario{
+            width: 400px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .formulario span{
+            width: 100%;
+            font-size: 1.5em;
+        }
+        field{
+            width: 100%;
+            margin: 15px 0;
+        }
+    </style>
+<body>
+   <div><h1>Formulário de Contato</h1></div>
+   
+   <section>
+       <form  class="formulario"action="mailto:fabricio.ferreira@uvv.br" method="post">
+        <span>Nome</span>
+        <input type="text" id="nome" placeholder="Nome do Visitante">
+    <br>
+        <span>E-Mail</span>
+        <input type="email" id="email">
+    <br>
+        <span>Data de Nascimento</span>
+        <input type="date">
+    <br>
+        <span>Visita ao Site:</span>
+        <input type="datetime-local">
+    <br>
+        <span>Senha</span>
+        <input  type="password">
+    <br>
+        <span>Contato</span>
+        <input type="radio" name="contato" value="sim">sim
+        <input type="radio" name="contato" value="nao">não
+    <br>
+        <span>Assunto:</span>
+        <input type="checkbox" name="auto" id="auto">Automóvel
+        <input type="checkbox" name="negocio" id="negocio">Negócios
+        <input type="checkbox" name="financias" id="financias">Financias
+        <input type="checkbox" name="tecnologia" id="tecnologia">Tecnologia
+        <input type="checkbox" name="esportes" id="esportes">Esportes
+    <br>
+        <span>Local:</span>
+        <select name="local" id="local" size="1">
+        <option value="">Selecione</option>
+        <option value="vitoria">Vitória</option>
+        <option value="serra">Serra</option>
+        <option value="cariacica">Cariacica</option>
+        <option value="vilavelha">Vila Velha</option>
+        </select>
+    <br>
+        <span>Comentário</span>
+        <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+       </form>
+   </section>
+</body>
+</html> 
