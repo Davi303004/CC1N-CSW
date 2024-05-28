@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        
+    
+        <from>
+            <h1>Login</h1>
+            <label>E-mail do Usuário:</label><input  id="usuario" type="email" placeholder="Digite seu E-Mail">
+            <Label>Senha:</Label><input id="senha" type="password" placeholder="Digite sua Senha">
+            <Button onclick="validar()">Entrar</Button><button onclick="Voltar()">Voltar</button>
+        </from>
+    
+    
+    </div>
+    <script>
+        const adm = "adm@uvv.br"
+        const psw = "adm#123"
+        function validar(){
+            let Usuario = document.getElementById("usuario").value
+            let Senha = document.getElementById("senha").value
+            if(Usuario == adm && Senha == psw){
+                window.alert("Usuario logado com sucesso")
+            } else {
+                window.alert("Usuário inválido")
+            }
+        }
+        function Voltar(){
+            window.open("index.Html","_self")
+        }
+    </script>
+</body>
+</html>
